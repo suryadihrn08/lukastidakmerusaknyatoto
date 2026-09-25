@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Galeri sederhana tentang Lukas.">
+  <title>Lukastidakmerusaknyatoto</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#home"><img src="assets/logo.jpeg" alt="Logo"><span>Lukastidakmerusaknyatoto</span></a>
+  <div class="navlinks"><button class="music-toggle" id="musicToggle" type="button" aria-label="Putar musik">♫ Musik</button><a class="navlink" href="#video">Video</a><a class="navlink" href="#galeri">Galeri</a></div>
+</header>
+<audio id="bgMusic" loop preload="auto"><source src="assets/aku-anak-sehat.mp3" type="audio/mpeg"></audio>
+<main>
+  <section class="hero" id="home">
+    <div class="hero-card">
+      <img class="avatar" src="assets/logo.jpeg" alt="Foto utama Lukas">
+      <p class="eyebrow">WELCOME TO</p>
+      <h1>Lukastidakmerusaknyatoto</h1>
+      <p class="lead">Sebuah halaman kecil untuk menyimpan momen-momen Lukas.</p>
+      <a class="button" href="#galeri">Lihat foto ↓</a>
+    </div>
+  </section>
+
+  <section class="video-section" id="video">
+    <div class="section-head"><p class="eyebrow">LUKAS IN MOTION</p><h2>Video Lukas</h2><p>Satu momen, sekarang lebih hidup.</p></div>
+    <div class="video-frame">
+      <video controls playsinline preload="metadata" poster="assets/lukas-1.jpeg">
+        <source src="assets/lukas-video.mp4" type="video/mp4">
+        Browser kamu tidak mendukung video HTML5.
+      </video>
+    </div>
+  </section>
+  <section class="gallery-section" id="galeri">
+    <div class="section-head"><p class="eyebrow">MOMENTS</p><h2>Galeri Lukas</h2><p>Klik foto untuk melihat lebih besar.</p></div>
+    <div class="gallery">
+      <button class="photo" data-src="assets/lukas-1.jpeg"><img src="assets/lukas-1.jpeg" alt="Lukas di lokasi proyek" loading="lazy"></button>
+      <button class="photo" data-src="assets/lukas-2.jpeg"><img src="assets/lukas-2.jpeg" alt="Lukas sedang duduk" loading="lazy"></button>
+      <button class="photo" data-src="assets/lukas-3.jpeg"><img src="assets/lukas-3.jpeg" alt="Lukas di lokasi proyek" loading="lazy"></button>
+      <button class="photo" data-src="assets/logo.jpeg"><img src="assets/logo.jpeg" alt="Momen bersama Lukas" loading="lazy"></button>
+    </div>
+  </section>
+</main>
+<footer>© <span id="year"></span> Lukastidakmerusaknyatoto</footer>
+<div class="lightbox" id="lightbox" aria-hidden="true"><button class="close" aria-label="Tutup">×</button><img id="lightboxImg" alt="Foto Lukas diperbesar"></div>
+<script src="script.js"></script>
+</body>
+</html>
